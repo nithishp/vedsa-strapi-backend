@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_ordered_item_ordered_items",
+  "info": {
+    "displayName": "OrderedItem",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "integer"
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "from": {
+      "type": "datetime"
+    },
+    "to": {
+      "type": "datetime"
+    }
+  }
+}
